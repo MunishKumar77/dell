@@ -1,0 +1,101 @@
+/* 🍔 McDonald's-Inspired Login Page */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #d60000, #ffcc00);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+/* 🍟 Login Box */
+.login-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  text-align: center;
+}
+
+/* 🍔 Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 30px;
+  border: 2px solid white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+input::placeholder {
+  color: rgba(122, 5, 5, 0.8);
+}
+
+/* 🍟 Login & Signup Buttons */
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(129, 6, 6, 0.3);
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* 🍔 Red Button */
+.btn-red {
+  background: #d60000;
+}
+
+.btn-red:hover {
+  background: #b30000;
+  transform: scale(1.05);
+  box-shadow: 0px 10px 25px rgba(255, 0, 0, 0.5);
+}
+
+/* 🍟 Yellow Button */
+.btn-yellow {
+  background: #ffcc00;
+  color: #d60000;
+}
+
+.btn-yellow:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+  box-shadow: 0px 10px 25px rgba(255, 204, 0, 0.5);
+}
+
+/* 🍔 Button Bounce Effect */
+.btn:active {
+  animation: bounce 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* 🍟 Responsive Design */
+@media (max-width: 768px) {
+  .login-box {
+    width: 280px;
+  }
+}
